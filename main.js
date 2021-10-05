@@ -1,11 +1,11 @@
-const { fabric } = require("../C-86/fabric");
+
 
 var canvas = new fabric.Canvas('myCanvas');
  var x= document.getElementById("myAudio");
 
 function new_image()
 {
-	fabric.Image.forURL('BirthdayImage.jpg' , function(Img){
+	fabric.Image.fromURL( "BirthdayImage.jpg" , function(Img){
         block_image_object = Img;
 
         block_image_object.scaleToWidth(700);
